@@ -1,0 +1,20 @@
+ul{
+    list-style-type: none;
+    margin: auto;
+    
+    
+  }
+  
+  .apphli{
+    margin-right: 7vw;
+    font-weight:bold;
+    
+  }
+
+.app-header{
+  background-color:rgb(11, 8, 58);
+
+}
+.login{
+  width: 5vw;
+}

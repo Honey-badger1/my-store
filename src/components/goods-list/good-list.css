@@ -1,0 +1,12 @@
+.goodlist{
+    margin:90px 0;
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+
+   
+}
+.goodlist .goodlistli{
+    flex: 1 0 25%;
+    margin-right: 7vw;
+}
