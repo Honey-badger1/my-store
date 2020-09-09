@@ -1,5 +1,5 @@
 export default class StoreService{
-    _apiBase = 'http://localhost:3000';
+    _apiBase = 'http://localhost:3001';
 
      getResource=async(url)=> {
         const res = await fetch(`${this._apiBase}${url}`);
