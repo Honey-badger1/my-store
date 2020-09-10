@@ -1,5 +1,5 @@
 export default class StoreService{
-    _apiBase = 'http://localhost:3001';
+    _apiBase = 'https://my-json-server.typicode.com/Honey-badger1/StoreApi/';
 
      getResource=async(url)=> {
         const res = await fetch(`${this._apiBase}${url}`);
