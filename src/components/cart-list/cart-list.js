@@ -2,14 +2,14 @@ import React from 'react';
 import {connect} from 'react-redux';
 import WithStoreService from '../hoc';
 
-import {deleteFromCart} from '../../actions';
+import {deleteFromCart, clearOrder} from '../../actions';
 
 
 
-const CartTable = ({items, deleteFromCart, StoreService}) => {
+const CartTable = ({items, deleteFromCart, clearOrder, StoreService}) => {
     return (
         <li>
-            <div className="cart__title">Your Order:</div>
+            <div className="cart__title" >Your Order:</div>
             <div className="cart__list">
                 {
 
@@ -35,7 +35,11 @@ const CartTable = ({items, deleteFromCart, StoreService}) => {
 
 
             </div>
-            <button onClick = {() => {StoreService.setOrder( generateOrder(items))} }>Set Order</button>
+            <button onClick = {() => {StoreService.setOrder( generateOrder(items)
+            ).then(response=>{console.log(response)}
+            ).catch(()=>{throw new Error('json error')}
+            ).finally(()=>{clearOrder()})}
+         }>Set Order</button>
             
         </li>
         
@@ -58,7 +62,8 @@ const mapStateToProps=({items})=>{
 }
 
 const mapDispatchToProps={
-   deleteFromCart
+   deleteFromCart,
+   clearOrder
 }
 
 export default WithStoreService()(connect(mapStateToProps, mapDispatchToProps)(CartTable));

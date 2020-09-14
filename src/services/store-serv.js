@@ -26,10 +26,11 @@ export default class StoreService{
                 'Content-Type': 'application/json;charset=utf-8'
             },
             body: JSON.stringify(newOrder)
-        });
-        if (!response.ok){
-            throw new Error('json error'); 
+    
         }
+        )
+        return await response.json()
+       
     }
 
      getOrderNumber=async()=>{

@@ -52,6 +52,14 @@ const findDiscount=()=>{
         
     };
 };
+const clearOrder=()=>{
+    return{
+        type:"CLEAR_ORDER"
+        
+        
+        
+    };
+};
 
 
 
@@ -62,7 +70,8 @@ export {
      deleteFromCart,
      findCategory,
      findItem,
-     findDiscount
+     findDiscount,
+     clearOrder
      
     
 };
