@@ -10,7 +10,9 @@ ul{
     font-weight:bold;
     
   }
-
+h1{
+  font-family: 'Grenze Gotisch', cursive;
+}
 .app-header{
   background-color:rgb(11, 8, 58);
 

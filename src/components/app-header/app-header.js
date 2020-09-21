@@ -9,7 +9,7 @@ class AppHeader extends Component{
  render(){
     return(
         <div className='d-flex app-header'>
-          <h1>W3</h1>
+          <h1>Logo</h1>
             <ul >
                <Link to={'/'} className="link"> <li className='float-left apphli'>About</li></Link>
                 <Link to={'/goods'} className="link"><li className='float-left apphli'>Goods</li></Link>
