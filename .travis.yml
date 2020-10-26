@@ -2,12 +2,12 @@ sudo: false
 
 language: node_js
 node_js:
-  - '12'
+  - 'node'
 script:
   -npm run build
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: SHA256:41CVsrgRUQa7LMsmd0gMWrZkwYUUcGhQdL6Kd2tsYW4
+  github_token: $SHA256:41CVsrgRUQa7LMsmd0gMWrZkwYUUcGhQdL6Kd2tsYW4
   on:
     branch: master
