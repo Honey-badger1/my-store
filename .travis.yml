@@ -5,9 +5,9 @@ node_js:
   - '12'
 script:
   -npm run build
-  deploy:
-    provider: pages
-    skip_cleanup: true
-    github_token: SHA256:41CVsrgRUQa7LMsmd0gMWrZkwYUUcGhQdL6Kd2tsYW4
-    on:
-      branch: master
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: SHA256:41CVsrgRUQa7LMsmd0gMWrZkwYUUcGhQdL6Kd2tsYW4
+  on:
+    branch: master
